@@ -6,7 +6,6 @@
 body{
     overflow:auto;
 }
-
 .bg-image{
     background-image: url("./assets/e42096bcb3ee9957.webp");
     height: 100vh;
@@ -14,7 +13,7 @@ body{
     background-size: 100% 100%;  
     background-repeat: no-repeat;
 }
-.row{
+.hero-texT{
     padding: 2em 0em 0em 0em;
     height: 100px;
     
@@ -133,7 +132,7 @@ ul ,li{
   padding: 20px 40px  ;
   transition: background-color 0.3s ease-in-out; 
   transition: border 0.3s ease-in-out;
-  z-index: 1;
+  z-index: 3;
 }
 .navinput{
     background-color: rgb(230, 227, 227);
@@ -172,5 +171,33 @@ header{
 }
 .footer-icon{
     display: grid;
-    gap:50% ;
+    gap:40% ;
+}
+.footerLists ul li{
+    display: inline-block;
+    margin-right: 1em;
+}
+
+/* --------media queries--------- */
+.cont nav form.rounded-pill{
+    display: block;
+}
+
+@media only screen and (max-width: 600px){
+    .cont nav form .rounded-pill{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 800px){
+    .hero-content .hero-btn{
+       margin-top: 2em;
+    }
+    #Sign-in{
+        margin-top: 3em;
+    }
+    .bg-image{
+        background-size: cover;
+    }
+    
 }
