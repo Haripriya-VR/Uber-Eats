@@ -156,8 +156,8 @@ header{
 }
 /*section-4*/
 .State-list{
-    font-size: 18px;
-    line-height: 50px;
+    font-size: 1em;
+    line-height: 2em;
 }
 .google-icon{
     width: 135px;
@@ -183,11 +183,16 @@ header{
     display: block;
 }
 
+
 @media only screen and (max-width: 600px){
     .cont nav form .rounded-pill{
         display: none;
     }
-    
+    .hero-content{
+        margin-top: 1em;
+        margin-right:1em;
+    }
+
 }
 @media only screen and (max-width: 800px){
     .hero-content .hero-btn{
@@ -198,6 +203,12 @@ header{
     }
     .bg-image{
         background-size: cover;
+    }
+    .section-4  ul{
+        padding: .5em;
+    }
+    .State-list ul{
+        padding: .5em;
     }
     
 }
